@@ -129,4 +129,13 @@ stocks = (
 
 # 총 재고 금액 출력
 prices = tuple(stock[1] * stock[2] for stock in stocks)
-print(f"{sum(prices):,}원")                                                  # ✅ 총액: 21,000원
+print(f"총액: {sum(prices):,}원")                                                  # ✅ 총액: 21,000원
+
+stocks = (
+    ("사과", "바나나", "체리"),
+    (1000, 2000, 5000),
+    (5, 3, 2)
+)
+
+total = sum(price * qty for _, price, qty in zip(*stocks)
+print(f"총액: {total:,}원")                                                        # ✅ 총액: 21,000원 
