@@ -137,5 +137,5 @@ stocks = (
     (5, 3, 2)
 )
 
-total = sum(price * qty for _, price, qty in zip(*stocks)
+total = sum(price * qty for _, price, qty in zip(*stocks))
 print(f"총액: {total:,}원")                                                        # ✅ 총액: 21,000원 
