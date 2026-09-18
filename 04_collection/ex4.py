@@ -138,4 +138,8 @@ stocks = (
 )
 
 total = sum(price * qty for _, price, qty in zip(*stocks))
+<<<<<<< HEAD
 print(f"총액: {total:,}원")                                                        # ✅ 총액: 21,000원 
+=======
+print(f"총액: {total:,}원")                                                        # ✅ 총액: 21,000원 
+>>>>>>> f256c970980e8f6baaf8906cfdd75535aa84f09d
